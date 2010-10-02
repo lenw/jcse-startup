@@ -1,10 +1,13 @@
 JcseStartup::Application.routes.draw do
+  devise_for :users
+
   resources :items
 
   resources :lists
-
+  
   resources :users
-
+  
+  root :to => 'users#list'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
