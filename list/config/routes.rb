@@ -1,4 +1,8 @@
 JcseStartup::Application.routes.draw do
+  resources :items
+
+  resources :lists
+
   resources :users
 
   # The priority is based upon order of creation:
