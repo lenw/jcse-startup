@@ -1,4 +1,14 @@
 Listy::Application.routes.draw do
+  resources :items
+
+  resources :lists
+
+  get 'pages/home'
+
+  devise_for :users
+
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
